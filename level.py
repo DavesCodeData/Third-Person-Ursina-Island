@@ -3,8 +3,8 @@ from direct.actor.Actor import Actor
 from ursina.shaders import colored_lights_shader
 from ursina.prefabs.health_bar import HealthBar
 from mob import Mob
-from player import Player
-#from thirdpersoncontroller import ThirdPersonController
+#from player import Player
+from thirdpersoncontroller import ThirdPersonController
 from enemy import Enemy
 class MainScene(Entity):#Entity built in Ursina method for objects in self created __init__ method
     def __init__(self):
@@ -146,8 +146,8 @@ class MainScene(Entity):#Entity built in Ursina method for objects in self creat
         self.turnOffShader = False
         #FirstPersonController built in Ursina method
         self.HB1.enabled = True#enable the health bar when the scene loads
-        self.player = Player()#call Player class in player file
-        #self.player = ThirdPersonController()#added on 5/24/23
+        #self.player = Player()#call Player class in player file
+        self.player = ThirdPersonController()#added on 5/24/23
         print('firstpersoncroller in load_scene -=====================================')
         self.target = self.player
         self.player.original_speed = self.player.speed
@@ -172,11 +172,11 @@ class MainScene(Entity):#Entity built in Ursina method for objects in self creat
 
         #mechaninc key inputs and support
     def input(self, key):#registers key inputs new parameter (key)
-        if key == 'shift':
-            self.player.doubleSpeed()#double speed from class Player
+        #if key == 'shift':
+            #self.player.doubleSpeed()#double speed from class Player
 
-        elif key == 'shift up':
-            self.player.speed = self.player.original_speed
+        #elif key == 'shift up':
+            #self.player.speed = self.player.original_speed
 
         if held_keys['control'] and key == 'r':#if you fall through mesh go back to starting point
             self.player.position = self.level.start_point.position
