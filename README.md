@@ -1,6 +1,6 @@
 How to run on Windows:
 
-Extract the zip file and double click Mad Island.
+Extract the zip file and double click Third Person Ursina Island.
 
 
 1) Install the most recent version of ursina with "pip install"
