@@ -31,7 +31,7 @@ class StartGame():#intro class
         position=(0, 0, -15),
         origin=(0, 0, 0)
         )
-        self.text = Text(text='MAD Island!', origin=(0, -1), scale=6)#display text
+        self.text = Text(text='Third Person Island!', origin=(0, -1), scale=6)#display text
         self.text.y = 0.1
                    
     def on_button_click(self):#first button called from on_click method line 15
