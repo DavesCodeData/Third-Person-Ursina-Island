@@ -14,4 +14,3 @@ Press Ctrl+R to reset the player position. I also have a second floor under the 
 All textures come from https://polyhaven.com/textures
 The code is inspired by https://github.com/pokepetter/ursina/archive/master.zip
 
-![MadIsland Intro] (https://github.com/CEOpoverty/MadIsland-ursina/blob/master/LoadedMenu.png)
