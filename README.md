@@ -14,3 +14,5 @@ Press Ctrl+R to reset the player position. I also have a second floor under the 
 All textures come from https://polyhaven.com/textures
 The code is inspired by https://github.com/pokepetter/ursina/archive/master.zip
 
+This is the repository where Third Person Controller comes from
+https://github.com/nathanlafere/UrsinaEngineThirdPersonController
